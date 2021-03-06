@@ -23,6 +23,6 @@ class FirstActivity : AppCompatActivity()
             }
             startActivity(i)
         }
-
+        // implicit explicit type of intent
     }
 }

@@ -3,6 +3,8 @@ package com.zealsoft.helloapp
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class ShowActivity : AppCompatActivity()
 {
@@ -11,18 +13,13 @@ class ShowActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.show_lay)
 
-        val txtName=findViewById<TextView>(R.id.txtName)
-        val txtMobNo=findViewById<TextView>(R.id.txtMoNo)
-        val txtAddress=findViewById<TextView>(R.id.txtAddress)
+        val rvStdList=findViewById<RecyclerView>(R.id.rvStudentList);
 
         val std=Student("Ashish","8888813277","Bsl")
-        val std1=Student("Ashish","8888813277","Bsl")
-        val std2=Student("Ashish","8888813277","Bsl")
-        val std3=Student("Ashish","8888813277","Bsl")
-        val std4=Student("Ashish","8888813277","Bsl")
-        /*txtName.text = std.stdName
-        txtMobNo.text = std.mobNo
-        txtAddress.text = std.address*/
+        val std1=Student("Paean","8888813277","Bsl")
+        val std2=Student("Dhiraj","8888813277","Bsl")
+        val std3=Student("Amol","8888813277","Bsl")
+        val std4=Student("SArvesh","8888813277","Bsl")
 
         val stdList=ArrayList<Student>()
         stdList.add(std)//0
@@ -31,10 +28,8 @@ class ShowActivity : AppCompatActivity()
         stdList.add(std3)//3
         stdList.add(std4)//4
 
-        stdList.size //5
+        rvStdList.layoutManager=LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
+        rvStdList.adapter=StudentAdapter(stdList,this)
 
-        stdList.removeAt(2)
-
-        stdList.get(3)
     }
 }

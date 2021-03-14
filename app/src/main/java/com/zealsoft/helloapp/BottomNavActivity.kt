@@ -24,6 +24,5 @@ class BottomNavActivity :AppCompatActivity()
         NavigationUI.setupWithNavController(bottom_nav_home, navController)
 
 
-
     }
 }

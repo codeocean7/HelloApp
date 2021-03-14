@@ -37,6 +37,16 @@
         </activity>
         <activity android:name=".BottomNavActivity"
             android:theme="@style/Theme.HelloApp">
+
+        </activity>
+
+        <activity android:name=".MyTabActivity"
+            android:theme="@style/Theme.HelloApp">
+
+        </activity>
+
+        <activity android:name=".DialogActivity"
+            android:theme="@style/Theme.HelloApp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

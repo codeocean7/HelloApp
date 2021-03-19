@@ -47,6 +47,12 @@
 
         <activity android:name=".DialogActivity"
             android:theme="@style/Theme.HelloApp">
+
+        </activity>
+
+        <activity android:name=".ShapeActivity"
+            android:theme="@style/Theme.HelloApp">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

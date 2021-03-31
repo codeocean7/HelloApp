@@ -68,10 +68,32 @@
 
         <activity android:name=".SplashActivity"
             android:theme="@style/Theme.HelloApp.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".NotiActivity"
+            android:theme="@style/Theme.HelloApp">
+
+        </activity>
+
+        <activity android:name=".CIActivity"
+            android:theme="@style/Theme.HelloApp"
+            android:label="Circle Image View">
+
+        </activity>
+
+        <activity android:name=".StudentFormActivity"
+            android:theme="@style/Theme.HelloApp"
+            android:label="Form">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+
+        <activity android:name=".StudentListActivity"
+            android:theme="@style/Theme.HelloApp">
+
         </activity>
 
     </application>

@@ -1,6 +1,7 @@
 package com.zealsoft.helloapp
 
-data class Student(val stdName: String,
-                   val mobNo: String,
-                   val address: String) {
+data class Student(var stdName: String = "",
+                   var stdCity: String = "",
+                   var stdMobNo: String = "",
+                   var stdId: String = "" ) {
 }

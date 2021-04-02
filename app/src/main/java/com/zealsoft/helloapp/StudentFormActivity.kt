@@ -43,6 +43,7 @@ class StudentFormActivity : AppCompatActivity() {
                     .add(dataMap)
                     .addOnSuccessListener {
                            Toast.makeText(this,"Data Added",Toast.LENGTH_LONG).show()
+                            clearForm()
                     }
                     .addOnFailureListener {
                         Toast.makeText(this,"Data Added Fail",Toast.LENGTH_LONG).show()
@@ -55,5 +56,11 @@ class StudentFormActivity : AppCompatActivity() {
             val showIntent=Intent(this,StudentListActivity::class.java)
             startActivity(showIntent)
         }
+    }
+
+    fun clearForm(){
+        edtName!!.setText("")
+        edtCity!!.setText("")
+        edtMobNo!!.setText("")
     }
 }

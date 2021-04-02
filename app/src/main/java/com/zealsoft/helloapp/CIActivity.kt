@@ -10,4 +10,5 @@ class CIActivity : AppCompatActivity()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ci_layout)
     }
+
 }

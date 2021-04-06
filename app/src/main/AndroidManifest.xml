@@ -85,10 +85,7 @@
         <activity android:name=".StudentFormActivity"
             android:theme="@style/Theme.HelloApp"
             android:label="Form">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+
         </activity>
 
         <activity android:name=".StudentListActivity"
@@ -98,6 +95,21 @@
 
         <activity android:name=".StudentUpdateForm"
             android:theme="@style/Theme.HelloApp">
+
+        </activity>
+
+        <activity android:name=".AuthWorks.RegistrationActivity"
+            android:theme="@style/Theme.HelloApp"
+            android:label="Registration">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AuthWorks.LoginActivity"
+            android:theme="@style/Theme.HelloApp"
+            android:label="Login">
 
         </activity>
 
